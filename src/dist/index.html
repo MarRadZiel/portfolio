@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/main.bundle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
 </head>
 
@@ -276,19 +277,19 @@
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-12">
           <div class="tile">
-            <div class="tile is-parent">
+            <div class="tile is-parent modal-trigger" data-target="project-1-modal">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-3by2">
-                  <img class="modal-trigger" data-target="project-1-modal" src="img/project-1-cover.png">
+                <p class="title">Witchcraft</p>
+                <figure class="image">
+                  <img src="https://1drv.ms/i/c/734b102676f7223f/IQShV-YVl4sfQqzjyMGouasPAZvkvidgomKmGxg66ZH-T2A?width=256" alt="Witchcraft thumbnail">
                 </figure>
               </article>
             </div>
-            <div class="tile is-parent">
+            <div class="tile is-parent modal-trigger" data-target="project-2-modal">
               <article class="tile is-child notification">
-                <p class="title">Project title</p>
-                <figure class="image is-4by3">
-                  <img class="modal-trigger" data-target="project-2-modal" src="img/project-2-cover.png">
+                <p class="title">Hook'n'Build</p>
+                <figure class="image">
+                  <img src="https://1drv.ms/i/c/734b102676f7223f/IQTfZJTX1nEoRKoCeHx_WE01AZ9X4EZvNPCgb_OjR5UmujM?width=256" alt="Hook'n'Build thumbnail">
                 </figure>
               </article>
             </div>
@@ -426,43 +427,50 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">Witchcraft</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
 
-        <div id="project-1-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+        <div id="project-1-modal-carousel" class="carousel" style="height: 25em;">
+          <figure class="carousel-cell carousel-cell-middle">
+            <img src="https://1drv.ms/i/c/734b102676f7223f/IQShV-YVl4sfQqzjyMGouasPAZvkvidgomKmGxg66ZH-T2A?width=1080" alt="Witchcraft screenshot 1">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+          <figure class="carousel-cell carousel-cell-middle">
+            <img src="https://1drv.ms/i/c/734b102676f7223f/IQTsTcDOnZrITpMQov4JV-4aAewq8HMa3XNs0REcoldsV7M?width=1080" alt="Witchcraft screenshot 2">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+          <figure class="carousel-cell carousel-cell-middle">
+            <img src="https://1drv.ms/i/c/734b102676f7223f/IQR1MgHhYJV2SqCKVjwUqha0AcDykCWrD72QOqU7qCa3DNk?width=1080" alt="Witchcraft screenshot 3">
+          </figure>
+          <figure class="carousel-cell carousel-cell-middle">
+            <img src="https://1drv.ms/i/c/734b102676f7223f/IQTtzca3QavmQ6oRi8w54EdVAVp51kM8A6asVZR8JqoFZDM?width=1080" alt="Witchcraft screenshot 4">
+          </figure>
+          <figure class="carousel-cell carousel-cell-middle">
+            <iframe src="https://1drv.ms/v/c/734b102676f7223f/IQSlo3wNFAEDQYI7ZHcDCJ9PAWBuL8QlpEnjBab1VIto7_o" width="100%" height="300em" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+          </figure>
+          <figure class="carousel-cell carousel-cell-middle">
+            <iframe src="https://1drv.ms/v/c/734b102676f7223f/IQQNx8glADQuTaa0JCTOaDHPAT2vErYqaOKNVWeed84O65U" width="100%" height="300em" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
           </figure>
         </div>
 
         <div class="content">
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
+          <p><i>Team: 4 programmers, 1 artist</i></p>
+          <p>The project was based on a game engine developed using C# and MonoGame framework. The main gameplay feature of Witchcraft was casting spells by drawing their symbols with mouse cursor. 
+            The engine included a level editor which accelerated the process of designing a scene shown in the game.</p>
+          <p>I was responsible e.g. for creating the editor, prefab and scene serialization, 
+            world chunks system and particle system.</p>
+          <p>The game took first place in <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2017" target="_blank">IX ZTGK (Team Game Development Competition)</a> in “Development” category and was rewarded by Teyon.</p>
 
           <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
+            <span class="tag">C#</span>
+            <span class="tag">MonoGame</span>
           </div>
-
         </div>
-
       </section>
       <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
+        <button class="modal-close-button is-success">Close</button>
+        <div style="width: 100%;"></div>
+        <a href="https://1drv.ms/u/c/734b102676f7223f/EZVDL_tbtK5BtJ_UryyBZYIB1B-oBT8pDPpI_Sml_EG7uA?e=KwjfhH" target="_blank" class="button"><i class="fa fa-download" style="margin-right: 5px;"></i>Download build</a>
       </footer>
     </div>
   </div>
@@ -471,43 +479,47 @@
     <div class="modal-background"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Project title</p>
+        <p class="modal-card-title">Hook'n'Build</p>
         <button class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
-
-        <div id="project-2-modal-carousel" class="carousel">
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/1.png">
+        
+        <div id="project-2-modal-carousel" class="carousel" style="height: 25em;">
+          <figure class="carousel-cell carousel-cell-middle">
+            <img src="https://1drv.ms/i/c/734b102676f7223f/IQTfZJTX1nEoRKoCeHx_WE01AZ9X4EZvNPCgb_OjR5UmujM?width=1080" alt="Hook'n'Build screenshot 1">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/2.png">
+          <figure class="carousel-cell carousel-cell-middle">
+            <img src="https://1drv.ms/i/c/734b102676f7223f/IQS9qSvP2z0HQKQPHpF0nn7CAXEvFXRmaDI5fCkDxnvceSQ?width=1080" alt="Hook'n'Build screenshot 2">
           </figure>
-          <figure class="image is-4by3 carousel-cell">
-            <img src="img/carousel/3.png">
+          <figure class="carousel-cell carousel-cell-middle">
+            <img src="https://1drv.ms/i/c/734b102676f7223f/IQSb6u1KUrwHSa2_fx-kcq5jASUUM7CIR3Vvy8WjUIYU9VM?width=1080" alt="Hook'n'Build screenshot 3">
+          </figure>
+          <figure class="carousel-cell carousel-cell-middle">
+            <img src="https://1drv.ms/i/c/734b102676f7223f/IQQOgsxECYOcQo25wUacaee-AcvsREx1cAD6LaaDL0L3VmQ?width=1080" alt="Hook'n'Build screenshot 4">
+          </figure>
+          <figure class="carousel-cell carousel-cell-middle">
+            <iframe src="https://1drv.ms/v/c/734b102676f7223f/IQRpb19Et1RuQrFygnux2-ZOASZJ5EuHlLe0r5wHDNJ2qOs" width="100%" height="300em" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
           </figure>
         </div>
-
+        
         <div class="content">
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat.</p>
+          <p><i>Team: 4 programmers, 1 artist</i></p>
+          <p>Real-time economical strategy game that evolved from game developed during Ludum Dare 38 game jam. Gameplay features involves expanding terrain by joining islands flying nearby and controlling smog level which reduces the civilization’s population.</p>
+          <p>I was responsible e.g. for creating the save system, coding of island flight path calculation and adjustment of island tile model based on its connection to the other tiles.</p>
+          <p>Project qualified for the final three in the “Game Design” category of <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2017" target="_blank">IX ZTGK</a>.<br/>
+            The game was then developed further with help of the Lodz University of Technology POWER project. It took part in the <a href="https://arp.pl/pl/aktualnosci/arp-games-zainwestowalo-0-5-mln-w-gry-wideo" target="_blank">ARP Games</a> acceleration program and qualified for the  investment stage.
 
           <div class="tags">
-            <span class="tag">angular</span>
-            <span class="tag">mongo</span>
-            <span class="tag">typscript</span>
-            <span class="tag">node</span>
+            <span class="tag">C#</span>
+            <span class="tag">Unity</span>
           </div>
-
         </div>
 
       </section>
       <footer class="modal-card-foot">
-        <button class="button is-success">Close</button>
+        <button class="modal-close-button is-success">Close</button>
+        <div style="width: 100%;"></div>
+        <a href="https://1drv.ms/u/c/734b102676f7223f/EawKNmT_WadAtXLzbw12ofUBx3AROnKu8QnSweb2YoxlcA?e=Umznxn" target="_blank" class="button"><i class="fa fa-download" style="margin-right: 5px;"></i>Download build</a>
       </footer>
     </div>
   </div>
@@ -687,23 +699,6 @@
   </footer>
 
   <script src="js/bundle.js"></script>
-
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        } 
-      });
-    }
-    </script>
 </body>
 
 </html>

@@ -5,6 +5,7 @@ require('flickity-imagesloaded');
 
 var $carousels = new Array();
 
+// Initialize section carousels
 var $sectionCarousels = getAll('.section-carousel');
 if ($sectionCarousels.length > 0) {
     $sectionCarousels.forEach(function ($el) {
@@ -21,13 +22,28 @@ if ($sectionCarousels.length > 0) {
     });
 }
 
+// Initialize collapsibles
+var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+
 // Modals
 
 var rootEl = document.documentElement;
 var $modals = getAll('.modal');
-var $modalTriggers = getAll('.modal-trigger');
-var $modalCloses = getAll('.modal-card-head .delete, .modal-card-foot .button');
 
+var $modalTriggers = getAll('.modal-trigger');
 if ($modalTriggers.length > 0) {
     $modalTriggers.forEach(function ($el) {
         $el.addEventListener('click', function () {
@@ -37,6 +53,7 @@ if ($modalTriggers.length > 0) {
     });
 }
 
+var $modalCloses = getAll('.modal-card-head .delete, .modal-card-foot .modal-close-button');
 if ($modalCloses.length > 0) {
     $modalCloses.forEach(function ($el) {
         $el.addEventListener('click', function () {
@@ -51,15 +68,16 @@ function openModal(target) {
     $target.classList.add('is-active');
     var carouselId = target + '-carousel';
 
-    if (document.querySelector('#' + carouselId)) {
+    var $el = document.querySelector('#' + carouselId);
+    if ($el) {
         // Initialize each carousel one time only
         if ($carousels.length === 0) {
-            $carousels.push(initCarousel(carouselId));
+            $carousels.push(initCarousel(carouselId, adaptiveHeight=false, autoPlay=true, wrapAround=true, setGallerySize=false, flex=true, carouselEl=$el));
         }
         else {
             var index = $carousels.findIndex(c => c.element.id == carouselId);
             if (index === -1) {
-                $carousels.push(initCarousel(carouselId));
+                $carousels.push(initCarousel(carouselId, adaptiveHeight=false, autoPlay=true, wrapAround=true, setGallerySize=false, flex=true, carouselEl=$el));
             }
         }
     }
@@ -82,7 +100,8 @@ function initCarousel(id, adaptiveHeight=true, autoplay=false, wrapAround=false,
                     carouselEl.classList.add('flexy-carousel');
                 }
             },
-            imagesLoaded: true,
+            freeScroll: false,
+            imagesLoaded: false,
             autoPlay: autoplay,
             wrapAround: wrapAround,
             setGallerySize: setGallerySize,
@@ -91,7 +110,8 @@ function initCarousel(id, adaptiveHeight=true, autoplay=false, wrapAround=false,
     }
     else {
         return new Flickity('#' + id, {
-            imagesLoaded: true,
+            freeScroll: false,
+            imagesLoaded: false,
             autoPlay: autoplay,
             wrapAround: wrapAround,
             setGallerySize: setGallerySize,
