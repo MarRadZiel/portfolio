@@ -75,7 +75,9 @@
     <div class="container">
       <h1 class="title">About Me</h1>
       <hr />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      <p>Hi! I'm Marcin Zieliński, and I'm a developer with a passion for game and multimedia application development.
+        I enjoy 
+        <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
@@ -88,12 +90,13 @@
     <div class="container">
       <h1 class="title">Professional Experience</h1>
       <hr />
+      <!-- VESCOM -->
       <div class="card">
         <div class="card-content">
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img src="img/logo_vescom.png" alt="Placeholder image">
+                <img src="img/logo_vescom.png" alt="Vescom logo">
               </figure>
             </div>
             <div class="media-content">
@@ -102,17 +105,101 @@
             </div>
           </div>
           <div class="content">
-            <strong>RUVRE - solution for real-time architecture visualization using Unity</strong>
-            <p>My primary responsibility was developing a project called RUVRE, designed to provide real-time visualization of architectural changes for the client.</p>
-            The project  consisted of:
-            <ul>
-              <li>a plugin for an existing <span class="tooltip">BIM<span class="tooltiptext">Building Information Modeling</span></span> software,</li>
-              <li>an ASP .NET Core web service used for database management,</li>
-              <li>a multiplatform client application created in Unity that should be compatible with Android, Windows, VR headsets (both desktop and standalone) and that features AR mode,</li>
-              <li>shared class library used by all of the above.</li>
-            </ul>
-            <p>Project allowed to convert existing software data to our format using the plugin and upload them to the server using the developed web service.</p>
-            <p>The client Unity application displayed uploaded projects and allowed a user to import and modify project’s contents.</p>
+            <!--RUVRE-->
+            <button class="collapsible">RUVRE - solution for real-time architecture visualization using Unity</button>
+            <div class="collapsible-content">
+              <p></p>
+              <p>My primary responsibility was developing a project called RUVRE, designed to provide real-time visualization of architectural changes for the client.</p>
+              The project  consisted of:
+              <ul>
+                <li>a plugin for an existing <span class="tooltip">BIM<span class="tooltiptext"><a href="https://pl.wikipedia.org/wiki/Building_Information_Modeling" target="_blank">Building Information Modeling</a></span></span> software,</li>
+                <li>an ASP .NET Core web service used for database management,</li>
+                <li>a multiplatform client application created in Unity that should be compatible with Android, Windows, VR headsets (both desktop and standalone) and that features AR mode,</li>
+                <li>shared class library used by all of the above.</li>
+              </ul>
+              <p>Project allowed to convert existing software data to our format using the plugin and upload them to the server using the developed web service.</p>
+              <p>The client Unity application displayed uploaded projects and allowed a user to import and modify project’s contents.</p>
+              <p>I was responsible for writing most of the code of the Unity client, BIM software plugin and RUVRE class library but I’ve also helped with the web service.
+                During the development I wrote a custom shader that was meant to support most BIM material properties. It allowed for example to display cross sections defined by the user. 
+                One of the more recent features that I’ve implemented was AR mode that let’s user position architectural model in the real-world’s space. 
+                The other feature I’ve coded that is worth noting was a custom lightmapper that processed uploaded projects on the server side without using Unity client and generated lightmaps for them.</p>
+              <p style="text-align: center;"><a href="https://ruvre.pl/index-en.html" target="_blank"><strong>More about RUVRE</strong></a></p>
+              <div class="row">
+                <div class="column">
+                  <img src="https://1drv.ms/i/c/734b102676f7223f/IQR12uoA6c5tQYgCaJ77gWd5Ad-AlnJV_gFQSAxso5CaJrI?width=1080" alt="RUVRE screenshot 1" style="min-height: 256px;">
+                </div>
+                <div class="column">
+                  <img src="https://1drv.ms/i/c/734b102676f7223f/IQQ-QzPipE9DSJnDNeg8jqLzAV7PJm_HYykrW0TRRjEYmC0?width=1080" alt="RUVRE screenshot 2" style="min-height: 256px;">
+                </div>
+              </div> 
+              <div class="row">
+                <div class="column">
+                  <img src="https://1drv.ms/i/c/734b102676f7223f/IQTDFDkEN8aNSKiTOVuyYzyWAZdOD1oCLLxNMwM9Kn2zOgE?width=1080" alt="RUVRE screenshot 3" style="min-height: 256px;">
+                </div>
+                <div class="column">
+                  <img src="https://1drv.ms/i/c/734b102676f7223f/IQQrTEpGnWf7RJOOwZtOllM3Aba40IXETUpp3lcVoLPPCoM?width=1080" alt="RUVRE screenshot 4" style="min-height: 256px;">
+                </div>
+              </div> 
+              <p></p>
+            </div>
+            <!--KIDS VR-->
+            <button class="collapsible">KIDS VR</button>
+            <div class="collapsible-content">
+              <p></p>
+              <p>A VR application for children to help them deal with pain and fear during venepuncture procedure.</p>
+              <p>The application consisted of playful animation shown in front of the patient with a small dose of interaction to keep them focused.</p>
+              My tasks included:
+              <ul>
+                <li>developing a Google Cardboard prototype and then an actual VR application,</li>
+                <li>creating animation based on provided screenplay and assets,</li>
+                <li>optimizing application (e.g. reducing scene triangle count by swapping meshes with their impostors).</li>
+              </ul>
+              <p>The project was developed for the KIDS Foundation.</p>
+              <div class="row">
+                <div class="column" style="text-align: center;">
+                  <a href="https://kids.org.pl/news/vr-czd" target="_blank"><strong>More about the project</strong></a>
+                </div>
+                <div class="column" style="text-align: center;">
+                  <a href="https://infowire.pl/generic/release/840210/fundacja-k-i-d-s-wprowadza-vr-jako-wsparcie-w-procesie-leczenia-najmlodszych-pacjentow-onkologicznych" target="_blank"><strong>Related article</strong></a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <img src="https://1drv.ms/i/c/734b102676f7223f/IQTn0GUvb9OeSZK0uCeJDhxSASeZDgUQtZBpD_UYdPcg-K8?width=1080" alt="RUVRE screenshot 1" style="min-height: 256px;">
+                </div>
+                <div class="column">
+                  <img src="https://1drv.ms/i/c/734b102676f7223f/IQSsXm-m-qqOQpaDAi_7MImTARNep2BGWb75e6fRdZoAUAk?width=1080" alt="RUVRE screenshot 2" style="min-height: 256px;">
+                </div>
+              </div> 
+              <div class="row">
+                <div class="column">
+                  <img src="https://1drv.ms/i/c/734b102676f7223f/IQS1-qlULtKuTohvuxXqpYoxAUS57gQ-2EcGrLK1JR0OBs0?width=1080" alt="RUVRE screenshot 3" style="min-height: 256px;">
+                </div>
+                <div class="column">
+                  <img src="https://1drv.ms/i/c/734b102676f7223f/IQQJa70OMVzUQY6wUuZBWVJaARbnssaHRNTkTl6b3ONy1yo?width=1080" alt="RUVRE screenshot 4" style="min-height: 256px;">
+                </div>
+              </div> 
+              <p></p>
+            </div>
+            <!--OTHER PROJECTS-->
+            <button class="collapsible">Other projects</button>
+            <div class="collapsible-content">
+              <p></p>
+              Other projects I was involved in during my work in Vescom:
+              <ul>
+                <li>VR application as an interactive display for the client’s hardware products. The application provides 3DOF experience. It allows to select products from the shelf and show information about them,</li>
+                <li>updated and improved already published Android game. I’ve also added third playable level to the game using existing and unfinished assets,<br/>
+                <a href="https://pangrollin.vescomstudios.com" target="_blank">https://pangrollin.vescomstudios.com</a></li>
+                <li>updated and modified VR game made for Oculus GO to work with modern headsets,<br/>
+                <a href="https://distorted.vescomstudios.com" target="_blank">https://distorted.vescomstudios.com</a></li>
+                <li>added VR support to existing applications (both Unity and Unreal Engine),</li>
+                <li>prototyped an AR application using barcode scanner,</li>
+                <li>helped with the development of a PHP web service using Yii2 framework.</li>
+              </ul>
+              <p></p>
+            </div>
+            <p></p>
             <div class="tags">
               <span class="tag">C#</span>
               <span class="tag">Unity</span>
@@ -124,12 +211,13 @@
           </div>
         </div>
       </div>
+      <!-- TEYON -->
       <div class="card card-gap">
         <div class="card-content">
           <div class="media">
             <div class="media-left">
               <figure class="image is-48x48">
-                <img src="img/logo_teyon.png" alt="Placeholder image">
+                <img src="img/logo_teyon.png" alt="Teyon logo">
               </figure>
             </div>
             <div class="media-content">
@@ -138,21 +226,28 @@
             </div>
           </div>
           <div class="content">
-            <p>I ported Android game bundle to the Nintendo Switch plaform. My tasks included:</p>
-            <ul>
-              <li>improving gameplay,</li>
-              <li>modifying assets to fit target platform,</li>
-              <li>adjusting control inputs to be compatible with the target platform.</li>
-            </ul>
-            <a href="#">30 in 1 Game Collection vol. 1</a>
-            <div class="row">
-              <div class="column">
-                <img src="https://1drv.ms/i/c/734b102676f7223f/IQTaraJHgzmFQ4upHZnFfNq1AYuIjDichFQFJ3lBS3z-6h8?width=1280" alt="Snow" style="width:100%">
-              </div>
-              <div class="column">
-                <img src="https://1drv.ms/i/c/734b102676f7223f/IQQh2lrGnLmaS5_i3XPJcWRsAXOUdCWA5VeOl8JLEqiSuv8?width=1280" alt="Forest" style="width:100%">
-              </div>
-            </div> 
+            <button class="collapsible">30 in 1 Game Collection vol. 1</button>
+              <div class="collapsible-content">
+              <p></p>
+              <p>My responsibility during my professional practice at Teyon was porting of an Android game bundle to the Nintendo Switch plaform.</p>
+              <p>My tasks included:</p>
+              <ul>
+                <li>improving gameplay,</li>
+                <li>modifying assets to fit target platform,</li>
+                <li>adjusting control inputs to be compatible with the target platform.</li>
+              </ul>
+              <p style="text-align: center;"><a href="https://teyon.com/games/30-1-game-collection/" target="_blank"><strong>30 in 1 Game Collection vol. 1</strong></a></p>
+              <div class="row">
+                <div class="column">
+                  <img src="https://1drv.ms/i/c/734b102676f7223f/IQTaraJHgzmFQ4upHZnFfNq1AYuIjDichFQFJ3lBS3z-6h8?width=1280" alt="Party Planet screenshot 1" style="min-height: 256px;">
+                </div>
+                <div class="column">
+                  <img src="https://1drv.ms/i/c/734b102676f7223f/IQQh2lrGnLmaS5_i3XPJcWRsAXOUdCWA5VeOl8JLEqiSuv8?width=1280" alt="Party Planet screenshot 2" style="min-height: 256px;">
+                </div>
+              </div> 
+              <p></p>
+            </div>
+            <p></p>
             <div class="tags">
               <span class="tag">C#</span>
               <span class="tag">Unity</span>
@@ -234,39 +329,40 @@
   <!-- Education -->
   <section class="section">
     <div class="container">
-      <h1 class="title">Education / Training</h1>
+      <h1 class="title">Education</h1>
       <hr />
       <div class="card">
         <div class="card-content">
           <div class="content">
-            <p class="title is-4">School Name</p>
-            <p class="subtitle is-6">Program/Course - <time datetime="2016-9">September 2016</time> - <time
-                datetime="2019-9">Sepemter 2019</time></p>
+            <p class="title is-4">Lodz University of Technology</p>
+            <p class="subtitle is-6"><time datetime="2018">2018</time> - <time datetime="2019">2019</time></p>
           </div>
           <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris.
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            </ul>
+            <p><strong>Master of Science: Information Technology</strong><br/>
+            specialization: Interactive Systems and Game Technologies</p>
           </div>
         </div>
       </div>
       <div class="card card-gap">
         <div class="card-content">
           <div class="content">
-            <p class="title is-4">School Name</p>
-            <p class="subtitle is-6">Program/Course - <time datetime="2015-9">September 2014</time> - <time
-                datetime="2015-9">Sepemter 2015</time></p>
+            <p class="title is-4">Lodz University of Technology</p>
+            <p class="subtitle is-6"><time datetime="2014">2014</time> - <time datetime="2018">2018</time></p>
           </div>
           <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Phasellus nec iaculis mauris.
-            <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            </ul>
+            <p><strong>Bachelor of Science: Information Technology</strong><br/>
+            specialization: Computer Simulation and Games Technologies</p>
+          </div>
+        </div>
+      </div>
+      <div class="card card-gap">
+        <div class="card-content">
+          <div class="content">
+            <p class="title is-4">Secondary Technical School of Mechanical and Electrical Engineering<br/>Upper Secondary School Complex No. 1 in Piotrków Trybunalski</p>
+            <p class="subtitle is-6"><time datetime="2010">2010</time> - <time datetime="2014">2014</time></p>
+          </div>
+          <div class="content">
+            <p><strong>Information Technology</strong></p>
           </div>
         </div>
       </div>
@@ -581,6 +677,23 @@
   </footer>
 
   <script src="js/bundle.js"></script>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 </body>
 
 </html>
