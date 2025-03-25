@@ -137,8 +137,28 @@ tooltip {
     padding: 5px;
 }
 
+.flexy-carousel .flickity-slider {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.section-carousel {
+    height: 512px;
+}
+
+.carousel-cell-middle{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    vertical-align: middle;
+}
+
 @media screen and (max-width: 500px) {
   .column {
     width: 100%;
+  }
+  .section-carousel {
+      height: 256px;
   }
 }

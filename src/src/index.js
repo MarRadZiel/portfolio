@@ -5,6 +5,22 @@ require('flickity-imagesloaded');
 
 var $carousels = new Array();
 
+var $sectionCarousels = getAll('.section-carousel');
+if ($sectionCarousels.length > 0) {
+    $sectionCarousels.forEach(function ($el) {
+        // Initialize each carousel one time only
+        if ($carousels.length === 0) {
+            $carousels.push(initCarousel($el.id, adaptiveHeight=false, autoPlay=true, wrapAround=true, setGallerySize=false, flex=true, carouselEl=$el));
+        }
+        else {
+            var index = $carousels.findIndex(c => c.element.id == $el.id);
+            if (index === -1) {
+                $carousels.push(initCarousel($el.id, adaptiveHeight=false, autoPlay=true, wrapAround=true, setGallerySize=false, flex=true, carouselEl=$el));
+            }
+        }
+    });
+}
+
 // Modals
 
 var rootEl = document.documentElement;
@@ -58,13 +74,37 @@ function closeModals() {
 
 // Functions
 
-function initCarousel(id) {
-    return new Flickity('#' + id, {
-        imagesLoaded: true,
-        adaptiveHeight: true // https://github.com/metafizzy/flickity/issues/11
-    });
+function initCarousel(id, adaptiveHeight=true, autoplay=false, wrapAround=false, setGallerySize=true, flex=false, carouselEl=null) {
+    if(flex && carouselEl!=null){
+        return new Flickity('#' + id, {
+            on: {
+                ready: () => {
+                    carouselEl.classList.add('flexy-carousel');
+                }
+            },
+            imagesLoaded: true,
+            autoPlay: autoplay,
+            wrapAround: wrapAround,
+            setGallerySize: setGallerySize,
+            adaptiveHeight: adaptiveHeight // https://github.com/metafizzy/flickity/issues/11
+        });
+    }
+    else {
+        return new Flickity('#' + id, {
+            imagesLoaded: true,
+            autoPlay: autoplay,
+            wrapAround: wrapAround,
+            setGallerySize: setGallerySize,
+            adaptiveHeight: adaptiveHeight // https://github.com/metafizzy/flickity/issues/11
+        });
+    }
 }
+
 
 function getAll(selector) {
     return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+}
+
+function resizeCarousels(){
+    flkty.resize();
 }
