@@ -63,16 +63,16 @@ a.icon > strong {margin-left:.25rem}
 }
 
 .collapsible:after {
-  content: '\2B9E';//'►';//'\23F5';
+  font-family: "Font Awesome 5 Free";
+  content: '\2B9E';;
   color: #363636;
-  font-weight: bold;
+  font-weight: 900;
   float: right;
-  //padding-right: 5px;
   margin-left: 5px;
 }
 
 .active:after {
-  content: '\2B9F';//'▼';//"\23F7";
+  content: '\2B9F';;
 }
 
 .collapsible-content {
@@ -84,7 +84,7 @@ a.icon > strong {margin-left:.25rem}
 }
 
 // Tooltips
-tooltip {
+.tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
@@ -137,6 +137,10 @@ tooltip {
     padding: 5px;
 }
 
+.card{
+  height: 100%;
+}
+
 .image-centered {
     margin-left: auto;
     margin-right: auto;
@@ -170,7 +174,7 @@ tooltip {
       position: absolute;
       inset: 0;
     }
-  }
+}
   
 .section-carousel {
     height: 512px;
