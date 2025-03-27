@@ -64,7 +64,7 @@ a.icon > strong {margin-left:.25rem}
 
 .collapsible:after {
   font-family: "Font Awesome 5 Free";
-  content: '\2B9E';;
+  content: '\f054';
   color: #363636;
   font-weight: 900;
   float: right;
@@ -72,7 +72,7 @@ a.icon > strong {margin-left:.25rem}
 }
 
 .active:after {
-  content: '\2B9F';;
+  content: '\f078';
 }
 
 .collapsible-content {
