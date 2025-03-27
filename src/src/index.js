@@ -1,4 +1,5 @@
 require('./styles.scss');
+require('./localization.js');
 
 var Flickity = require('flickity');
 require('flickity-imagesloaded');
@@ -127,4 +128,13 @@ function getAll(selector) {
 
 function resizeCarousels(){
     flkty.resize();
+}
+
+function select_language(language) {
+    $("[lang]").each(function () {
+        if ($(this).attr("lang") == language)
+            $(this).show();
+        else
+            $(this).hide();
+    });
 }

@@ -57,10 +57,19 @@
             <i class="fab fa-2x fa-linkedin-in"></i>
           </a>
         </div>
+        <div class="navbar-item">
+          <button class="flag-button" data-language="en">
+              <img src="https://flagcdn.com/us.svg" alt="English">
+          </button>
+          <button class="flag-button" data-language="pl">
+              <img src="https://flagcdn.com/pl.svg" alt="Polski">
+          </button>
+        </div>
       </div>
     </div>
   </nav>
 
+  
   <!-- Hero -->
   <section class="hero is-primary">
     <div class="hero-body">
@@ -74,15 +83,11 @@
         </div>
         <div class="columns has-text-centered">
           <div class="column">
-            <h1 class="title is-1">
-              Marcin Zieliński
-            </h1>
-            <h2 class="subtitle">
-              Unity C# developer, Łódź, Poland
-            </h2>
+            <h1 class="title is-1">Marcin Zieliński</h1>
+            <h2 class="subtitle" locKey="section_hero_summary">Unity C# developer, Łódź, Poland</h2>
             <p>
               <a href="https://1drv.ms/b/c/734b102676f7223f/EUjuB_CnqsFNmjUMRVXgE64BwoTtZO2GT_eyRP2bbe2WOg" target="_blank" class="icon has-text-light">
-                <i class="fas fa-file-pdf"></i> <strong>Resume</strong>
+                <i class="fas fa-file-pdf"></i><strong><span locKey="section_hero_resume">Resume</span></strong>
               </a>
             </p>
           </div>
@@ -94,12 +99,12 @@
   <!-- About me -->
   <section class="section">
     <div class="container">
-      <h1 class="title">About Me</h1>
+      <h1 class="title" locKey="section_aboutme_title">About Me</h1>
       <hr />
-      <p><strong>Hi! I'm Marcin Zieliński</strong></p>
-      <p>I'm a developer with a passion for game and multimedia software engineering. I particularly enjoy programming tasks that involve developing tools to streamline the application development process, such as extending game engine capabilities.</p>
-      <p>Over the years, I’ve built my skills in C# and Unity, working on projects that let me explore creative and technical solutions. I’m always looking for opportunities to learn and become better at what I do.</p>
-      <p>In my free time, I enjoy working on personal projects, like a Sudoku-inspired game I’m currently developing. With a working prototype already crafted in Unity, I’m eager to refine and release it when it’s ready.</p>
+      <p><strong><span locKey="section_aboutme_text_hello">Hi! I'm Marcin Zieliński</span></strong></p>
+      <p locKey="section_aboutme_text_paragraph_1">I'm a developer with a passion for game and multimedia software engineering. I particularly enjoy programming tasks that involve developing tools to streamline the application development process, such as extending game engine capabilities.</p>
+      <p locKey="section_aboutme_text_paragraph_2">Over the years, I’ve built my skills in C# and Unity, working on projects that let me explore creative and technical solutions. I’m always looking for opportunities to learn and become better at what I do.</p>
+      <p locKey="section_aboutme_text_paragraph_3">In my free time, I enjoy working on personal projects, like a Sudoku-inspired game I’m currently developing. With a working prototype already crafted in Unity, I’m eager to refine and release it when it’s ready.</p>
     </div>
   </section>
 
@@ -107,7 +112,7 @@
   <!-- Professional experience -->
   <section class="section">
     <div class="container">
-      <h1 class="title">Professional Experience</h1>
+      <h1 class="title" locKey="section_professional_experience_title">Professional Experience</h1>
       <hr />
       <!-- VESCOM -->
       <div class="card">
@@ -120,12 +125,12 @@
             </div>
             <div class="media-content">
               <p class="title is-4">Vescom</p>
-              <p class="subtitle is-6">Software Developer - <time datetime="2020-1">January 2020</time> - present </p>
+              <p class="subtitle is-6"><span locKey="section_professional_experience_vescom_position">Software Developer</span> - <time datetime="2020-1"><span locKey="month_january">January</span> 2020</time> - <span locKey="time_present">present</span></p>
             </div>
           </div>
           <div class="content">
             <!--RUVRE-->
-            <button class="collapsible" onclick="resizeCarousels()">RUVRE - solution for real-time architecture visualization using Unity</button>
+            <button class="collapsible" onclick="resizeCarousels()"><span locKey="section_professional_experience_vescom_ruvre_title">RUVRE - solution for real-time architecture visualization using Unity</span></button>
             <div class="collapsible-content">
               <div id="ruvre-carousel" class="carousel section-carousel mt-3">
                 <figure class="carousel-cell carousel-cell-middle">
@@ -165,7 +170,7 @@
               </div>
             </div>
             <!--KIDS VR-->
-            <button class="collapsible">KIDS VR</button>
+            <button class="collapsible"><span locKey="section_professional_experience_vescom_kidsvr_title">KIDS VR</span></button>
             <div class="collapsible-content">
               <div id="kidsvr-carousel" class="carousel section-carousel mt-3">
                 <figure class="carousel-cell carousel-cell-middle">
@@ -205,7 +210,7 @@
               </div>
             </div>
             <!--OTHER PROJECTS-->
-            <button class="collapsible">Other projects</button>
+            <button class="collapsible"><span locKey="section_professional_experience_vescom_other_title">Other projects</span></button>
             <div class="collapsible-content">
               <p class="mt-3">Other projects I was involved in during my work in Vescom:</p>
               <ul class="mb-2">
@@ -241,11 +246,11 @@
             </div>
             <div class="media-content">
               <p class="title is-4">Teyon</p>
-              <p class="subtitle is-6">Programmer (Professional practice) - <time datetime="2017-07">July 2017</time> - <time datetime="2017-8">August 2017</time></p>
+              <p class="subtitle is-6"><span locKey="section_professional_experience_teyon_position">Programmer (Professional practice)</span> - <time datetime="2017-07"><span locKey="month_july">July</span> 2017</time> - <time datetime="2017-8"><span locKey="month_august">August</span> 2017</time></p>
             </div>
           </div>
           <div class="content">
-            <button class="collapsible">30 in 1 Game Collection vol. 1 - Nintendo Switch port</button>
+            <button class="collapsible"><span locKey="section_professional_experience_teyon_partyplanet_title">30 in 1 Game Collection vol. 1 - Nintendo Switch port</span></button>
             <div class="collapsible-content">
               <div id="partyplanet-carousel" class="carousel section-carousel mt-3">
                 <figure class="carousel-cell carousel-cell-middle">
