@@ -192,14 +192,30 @@ a.icon > strong {margin-left:.25rem}
 
 
 //Language toggle
-.flag-button {
+.language-toggle-group {
   cursor: pointer;
-  border: none;
-  background: none;
+  padding: 2px;
+  background-color: #00d1b2;
+  border: 0px solid;
+  border-radius: 1em;
+  float: right;
+  margin: 5px;
 }
-.flag-button img {
-  width: 30px;
-  height: 20px;
+.language-button {
+  cursor: pointer;
+  padding: 4px;
+  margin: 2px;
+  font-weight: bold;
+  background: none;
+  border: 0px solid;
+  border-radius: 1em;
+  border-color: none;
+  color: #ffffff;
+}
+.language-button-selected {
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #00d1b2;
 }
 
 @media screen and (max-width: 500px) {

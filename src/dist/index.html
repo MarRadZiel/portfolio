@@ -57,14 +57,6 @@
             <i class="fab fa-2x fa-linkedin-in"></i>
           </a>
         </div>
-        <div class="navbar-item">
-          <button class="flag-button" data-language="en">
-              <img src="https://flagcdn.com/us.svg" alt="English">
-          </button>
-          <button class="flag-button" data-language="pl">
-              <img src="https://flagcdn.com/pl.svg" alt="Polski">
-          </button>
-        </div>
       </div>
     </div>
   </nav>
@@ -84,10 +76,10 @@
         <div class="columns has-text-centered">
           <div class="column">
             <h1 class="title is-1">Marcin Zieliński</h1>
-            <h2 class="subtitle" locKey="section_hero_summary">Unity C# developer, Łódź, Poland</h2>
+            <h2 class="subtitle" locKey="s_hero_summary">Unity C# developer, Łódź, Poland</h2>
             <p>
               <a href="https://1drv.ms/b/c/734b102676f7223f/EUjuB_CnqsFNmjUMRVXgE64BwoTtZO2GT_eyRP2bbe2WOg" target="_blank" class="icon has-text-light">
-                <i class="fas fa-file-pdf"></i><strong><span locKey="section_hero_resume">Resume</span></strong>
+                <i class="fas fa-file-pdf"></i><strong><span locKey="s_hero_resume">Resume</span></strong>
               </a>
             </p>
           </div>
@@ -95,16 +87,27 @@
       </div>
     </div>
   </section>
+  
+  <div>
+    <div class="language-toggle-group">
+      <button class="language-button" data-language="en">
+        EN
+      </button>
+      <button class="language-button" data-language="pl">
+        PL
+      </button>
+    </div>
+  </div>
 
   <!-- About me -->
   <section class="section">
     <div class="container">
-      <h1 class="title" locKey="section_aboutme_title">About Me</h1>
+      <h1 class="title" locKey="s_aboutme_title">About Me</h1>
       <hr />
-      <p><strong><span locKey="section_aboutme_text_hello">Hi! I'm Marcin Zieliński</span></strong></p>
-      <p locKey="section_aboutme_text_paragraph_1">I'm a developer with a passion for game and multimedia software engineering. I particularly enjoy programming tasks that involve developing tools to streamline the application development process, such as extending game engine capabilities.</p>
-      <p locKey="section_aboutme_text_paragraph_2">Over the years, I’ve built my skills in C# and Unity, working on projects that let me explore creative and technical solutions. I’m always looking for opportunities to learn and become better at what I do.</p>
-      <p locKey="section_aboutme_text_paragraph_3">In my free time, I enjoy working on personal projects, like a Sudoku-inspired game I’m currently developing. With a working prototype already crafted in Unity, I’m eager to refine and release it when it’s ready.</p>
+      <p><strong><span locKey="s_aboutme_text_hello">Hi! I'm Marcin Zieliński</span></strong></p>
+      <p locKey="s_aboutme_text_p_1">I'm a developer with a passion for game and multimedia software engineering. I particularly enjoy programming tasks that involve developing tools to streamline the application development process, such as extending game engine capabilities.</p>
+      <p locKey="s_aboutme_text_p_2">Over the years, I’ve built my skills in C# and Unity, working on projects that let me explore creative and technical solutions. I’m always looking for opportunities to learn and become better at what I do.</p>
+      <p locKey="s_aboutme_text_p_3">In my free time, I enjoy working on personal projects, like a Sudoku-inspired game I’m currently developing. With a working prototype already crafted in Unity, I’m eager to refine and release it when it’s ready.</p>
     </div>
   </section>
 
@@ -112,7 +115,7 @@
   <!-- Professional experience -->
   <section class="section">
     <div class="container">
-      <h1 class="title" locKey="section_professional_experience_title">Professional Experience</h1>
+      <h1 class="title" locKey="s_prof_exp_title">Professional Experience</h1>
       <hr />
       <!-- VESCOM -->
       <div class="card">
@@ -125,12 +128,12 @@
             </div>
             <div class="media-content">
               <p class="title is-4">Vescom</p>
-              <p class="subtitle is-6"><span locKey="section_professional_experience_vescom_position">Software Developer</span> - <time datetime="2020-1"><span locKey="month_january">January</span> 2020</time> - <span locKey="time_present">present</span></p>
+              <p class="subtitle is-6"><span locKey="s_prof_exp_vescom_position">Software Developer</span> - <time datetime="2020-1"><span locKey="month_january">January</span> 2020</time> - <span locKey="time_present">present</span></p>
             </div>
           </div>
           <div class="content">
             <!--RUVRE-->
-            <button class="collapsible" onclick="resizeCarousels()"><span locKey="section_professional_experience_vescom_ruvre_title">RUVRE - solution for real-time architecture visualization using Unity</span></button>
+            <button class="collapsible" onclick="resizeCarousels()"><span locKey="s_prof_exp_vescom_ruvre_title">RUVRE - solution for real-time architecture visualization using Unity</span></button>
             <div class="collapsible-content">
               <div id="ruvre-carousel" class="carousel section-carousel mt-3">
                 <figure class="carousel-cell carousel-cell-middle">
@@ -146,21 +149,21 @@
                   <img src="img/projects/professional/vescom/ruvre/VR_mode.png" alt="RUVRE screenshot 4">
                 </figure>
               </div>
-              <p>My primary responsibility was developing a project called RUVRE, designed to provide real-time visualization of architectural changes for the client.</p>
-              The project  consisted of:
+              <p locKey="s_prof_exp_vescom_ruvre_p_1">My primary responsibility was developing a project called RUVRE, designed to provide real-time visualization of architectural changes for the client.</p>
+              <p locKey="s_prof_exp_vescom_ruvre_p_2">The project consisted of:</p>
               <ul>
-                <li>a plugin for an existing <span class="tooltip">BIM<span class="tooltiptext"><a href="https://pl.wikipedia.org/wiki/Building_Information_Modeling" target="_blank">Building Information Modeling</a></span></span> software,</li>
-                <li>an ASP .NET Core web service used for database management,</li>
-                <li>a multiplatform client application created in Unity that should be compatible with Android, Windows, VR headsets (both desktop and standalone) and that features AR mode,</li>
-                <li>shared class library used by all of the above.</li>
+                <li locKey="s_prof_exp_vescom_ruvre_p_2_1">a plugin for an existing <span class="tooltip">BIM<span class="tooltiptext"><a href="https://en.wikipedia.org/wiki/Building_Information_Modeling" target="_blank">Building Information Modeling</a></span></span> software,</li>
+                <li locKey="s_prof_exp_vescom_ruvre_p_2_2">an ASP .NET Core web service used for database management,</li>
+                <li locKey="s_prof_exp_vescom_ruvre_p_2_3">a multiplatform client application created in Unity that should be compatible with Android, Windows, VR headsets (both desktop and standalone) and that features AR mode,</li>
+                <li locKey="s_prof_exp_vescom_ruvre_p_2_4">shared class library used by all of the above.</li>
               </ul>
-              <p>Project allowed to convert existing software data to our format using the plugin and upload them to the server using the developed web service.</p>
-              <p>The client Unity application displayed uploaded projects and allowed a user to import and modify project’s contents.</p>
-              <p>I was responsible for writing most of the code of the Unity client, BIM software plugin and RUVRE class library but I’ve also helped with the web service.
+              <p locKey="s_prof_exp_vescom_ruvre_p_3">Project allowed to convert existing software data to our format using the plugin and upload them to the server using the developed web service.</p>
+              <p locKey="s_prof_exp_vescom_ruvre_p_4">The client Unity application displayed uploaded projects and allowed a user to import and modify project’s contents.</p>
+              <p locKey="s_prof_exp_vescom_ruvre_p_5">I was responsible for writing most of the code of the Unity client, BIM software plugin and RUVRE class library but I’ve also helped with the web service.
                 During the development I wrote a custom shader that was meant to support most BIM material properties. It allowed for example to display cross sections defined by the user. 
                 One of the more recent features that I’ve implemented was AR mode that let’s user position architectural model in the real-world’s space. 
                 The other feature I’ve coded that is worth noting was a custom lightmapper that processed uploaded projects on the server side without using Unity client and generated lightmaps for them.</p>
-              <p style="text-align: center;"><a href="https://ruvre.pl/index-en.html" target="_blank" class="button is-link"><i class="fa fa-info-circle mr-2"></i><strong>More about RUVRE</strong></a></p>
+              <p style="text-align: center;"><a href="https://ruvre.pl/index-en.html" target="_blank" class="button is-link"><i class="fa fa-info-circle mr-2"></i><strong><span locKey="s_prof_exp_vescom_ruvre_btn_text">More about RUVRE</span></strong></a></p>
               <div class="tags mb-1 mt-3">
                 <span class="tag">C#</span>
                 <span class="tag">Unity</span>
@@ -170,7 +173,7 @@
               </div>
             </div>
             <!--KIDS VR-->
-            <button class="collapsible"><span locKey="section_professional_experience_vescom_kidsvr_title">KIDS VR</span></button>
+            <button class="collapsible"><span locKey="s_prof_exp_vescom_kidsvr_title">KIDS VR</span></button>
             <div class="collapsible-content">
               <div id="kidsvr-carousel" class="carousel section-carousel mt-3">
                 <figure class="carousel-cell carousel-cell-middle">
@@ -186,21 +189,21 @@
                   <img src="img/projects/professional/vescom/kidsvr/Screen_4.png" alt="KIDSVR screenshot 4">
                 </figure>
               </div>
-              <p>A VR application for children to help them deal with pain and fear during venepuncture procedure.</p>
-              <p>The application consisted of playful animation shown in front of the patient with a small dose of interaction to keep them focused.</p>
-              My tasks included:
+              <p locKey="s_prof_exp_vescom_kidsvr_p_1">A VR application for children to help them deal with pain and fear during venepuncture procedure.</p>
+              <p locKey="s_prof_exp_vescom_kidsvr_p_2">The application consisted of playful animation shown in front of the patient with a small dose of interaction to keep them focused.</p>
+              <p locKey="s_prof_exp_vescom_kidsvr_p_3">My tasks included:</p>
               <ul>
-                <li>developing a Google Cardboard prototype and then an actual VR application,</li>
-                <li>creating animation based on provided screenplay and assets,</li>
-                <li>optimizing application (e.g. reducing scene triangle count by swapping meshes with their impostors).</li>
+                <li locKey="s_prof_exp_vescom_kidsvr_p_3_1">developing a Google Cardboard prototype and then an actual VR application,</li>
+                <li locKey="s_prof_exp_vescom_kidsvr_p_3_2">creating animation based on provided screenplay and assets,</li>
+                <li locKey="s_prof_exp_vescom_kidsvr_p_3_3">optimizing application (e.g. reducing scene triangle count by swapping meshes with their impostors).</li>
               </ul>
-              <p>The project was developed for the KIDS Foundation.</p>
+              <p locKey="s_prof_exp_vescom_kidsvr_p_4">The project was developed for the KIDS Foundation.</p>
               <div class="row">
                 <div class="column" style="text-align: center;">
-                  <a href="https://kids.org.pl/news/vr-czd" target="_blank" class="button is-link"><i class="fa fa-info-circle mr-2"></i><strong>More about the project</strong></a>
+                  <a href="https://kids.org.pl/news/vr-czd" target="_blank" class="button is-link"><i class="fa fa-info-circle mr-2"></i><strong><span locKey="s_prof_exp_vescom_kidsvr_more_btn_text">More about the project</span></strong></a>
                 </div>
                 <div class="column" style="text-align: center;">
-                  <a href="https://infowire.pl/generic/release/840210/fundacja-k-i-d-s-wprowadza-vr-jako-wsparcie-w-procesie-leczenia-najmlodszych-pacjentow-onkologicznych" target="_blank" class="button is-link"><i class="fas fa-globe mr-2"></i><strong>Related article</strong></a>
+                  <a href="https://infowire.pl/generic/release/840210/fundacja-k-i-d-s-wprowadza-vr-jako-wsparcie-w-procesie-leczenia-najmlodszych-pacjentow-onkologicznych" target="_blank" class="button is-link"><i class="fas fa-globe mr-2"></i><strong><span locKey="s_prof_exp_vescom_kidsvr_article_btn_text">Related article</span></strong></a>
                 </div>
               </div>
               <div class="tags mb-1 mt-3">
@@ -210,18 +213,18 @@
               </div>
             </div>
             <!--OTHER PROJECTS-->
-            <button class="collapsible"><span locKey="section_professional_experience_vescom_other_title">Other projects</span></button>
+            <button class="collapsible"><span locKey="s_prof_exp_vescom_other_title">Other projects</span></button>
             <div class="collapsible-content">
-              <p class="mt-3">Other projects I was involved in during my work in Vescom:</p>
+              <p class="mt-3" locKey="s_prof_exp_vescom_other_p_1">Other projects I was involved in during my work in Vescom:</p>
               <ul class="mb-2">
-                <li>VR application as an interactive display for the client’s hardware products. The application provides 3DOF experience. It allows to select products from the shelf and show information about them,</li>
-                <li>updated and improved already published Android game. I’ve also added third playable level to the game using existing and unfinished assets,<br/>
+                <li locKey="s_prof_exp_vescom_other_p_1_1">VR application as an interactive display for the client’s hardware products. The application provides 3DOF experience. It allows to select products from the shelf and show information about them,</li>
+                <li><span locKey="s_prof_exp_vescom_other_p_1_2">updated and improved already published Android game. I’ve also added third playable level to the game using existing and unfinished assets,</span><br/>
                 <a href="https://pangrollin.vescomstudios.com" target="_blank">https://pangrollin.vescomstudios.com</a></li>
-                <li>updated and modified VR game made for Oculus GO to work with modern headsets,<br/>
+                <li><span locKey="s_prof_exp_vescom_other_p_1_3">updated and modified VR game made for Oculus GO to work with modern headsets,</span><br/>
                 <a href="https://distorted.vescomstudios.com" target="_blank">https://distorted.vescomstudios.com</a></li>
-                <li>added VR support to existing applications (both Unity and Unreal Engine),</li>
-                <li>prototyped an AR application using <a href="https://developers.google.com/ml-kit">ML Kit</a>,</li>
-                <li>helped with the development of a PHP web service using Yii2 framework.</li>
+                <li locKey="s_prof_exp_vescom_other_p_1_4">added VR support to existing applications (both Unity and Unreal Engine),</li>
+                <li locKey="s_prof_exp_vescom_other_p_1_5">prototyped an AR application using <a href="https://developers.google.com/ml-kit">ML Kit</a>,</li>
+                <li locKey="s_prof_exp_vescom_other_p_1_6">helped with the development of a PHP web service using Yii2 framework.</li>
               </ul>
             </div>
             <div class="tags mt-3">
@@ -246,11 +249,11 @@
             </div>
             <div class="media-content">
               <p class="title is-4">Teyon</p>
-              <p class="subtitle is-6"><span locKey="section_professional_experience_teyon_position">Programmer (Professional practice)</span> - <time datetime="2017-07"><span locKey="month_july">July</span> 2017</time> - <time datetime="2017-8"><span locKey="month_august">August</span> 2017</time></p>
+              <p class="subtitle is-6"><span locKey="s_prof_exp_teyon_position">Programmer (Professional practice)</span> - <time datetime="2017-07"><span locKey="month_july">July</span> 2017</time> - <time datetime="2017-8"><span locKey="month_august">August</span> 2017</time></p>
             </div>
           </div>
           <div class="content">
-            <button class="collapsible"><span locKey="section_professional_experience_teyon_partyplanet_title">30 in 1 Game Collection vol. 1 - Nintendo Switch port</span></button>
+            <button class="collapsible"><span locKey="s_prof_exp_teyon_partyplanet_title">30 in 1 Game Collection vol. 1 - Nintendo Switch port</span></button>
             <div class="collapsible-content">
               <div id="partyplanet-carousel" class="carousel section-carousel mt-3">
                 <figure class="carousel-cell carousel-cell-middle">
@@ -263,14 +266,14 @@
                   <img src="img/projects/professional/teyon/partyplanet/Credits.jpg" alt="Party Planet screenshot 3">
                 </figure>
               </div>
-              <p>My responsibility during my professional practice at Teyon was porting of an Android game bundle to the Nintendo Switch plaform.</p>
-              <p>My tasks included:</p>
+              <p locKey="s_prof_exp_teyon_partyplanet_p_1">My responsibility during my professional practice at Teyon was porting of an Android game bundle to the Nintendo Switch plaform.</p>
+              <p locKey="s_prof_exp_teyon_partyplanet_p_2">My tasks included:</p>
               <ul>
-                <li>improving gameplay,</li>
-                <li>modifying assets to fit target platform,</li>
-                <li>adjusting control inputs to be compatible with the target platform.</li>
+                <li locKey="s_prof_exp_teyon_partyplanet_p_2_1">improving gameplay,</li>
+                <li locKey="s_prof_exp_teyon_partyplanet_p_2_2">modifying assets to fit target platform,</li>
+                <li locKey="s_prof_exp_teyon_partyplanet_p_2_3">adjusting control inputs to be compatible with the target platform.</li>
               </ul>
-              <p style="text-align: center;"><a href="https://teyon.com/games/30-1-game-collection/" target="_blank" class="button is-link mb-2"><i class="fas fa-globe mr-2"></i><strong>30 in 1 Game Collection vol. 1</strong></a></p>
+              <p style="text-align: center;"><a href="https://teyon.com/games/30-1-game-collection/" target="_blank" class="button is-link mb-2"><i class="fas fa-globe mr-2"></i><strong><span locKey="s_prof_exp_teyon_partyplanet_btn_text">30 in 1 Game Collection vol. 1</span></strong></a></p>
             </div>
             <div class="tags mt-3">
               <span class="tag">C#</span>
@@ -285,9 +288,9 @@
   <!-- Projects -->
   <section class="section">
     <div class="container">
-      <h1 class="title">Projects</h1>
+      <h1 class="title" locKey="s_proj_title">Projects</h1>
       <hr />
-      <p class="subtitle is-6 mb-5">This section contains projects made for game jams, contests and ones that I’ve developed after work in my free time. Some of them are games and applications made during my studies at Lodz University of Technology.</p>
+      <p class="subtitle is-6 mb-5" locKey="s_proj_intro">This section contains projects made for game jams, contests and ones that I’ve developed after work in my free time. Some of them are games and applications made during my studies at Lodz University of Technology.</p>
 
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-12">
@@ -306,9 +309,7 @@
                         <p class="title is-4">Witchcraft</p>
                       </div>
                     </div>
-                    <div class="content">
-                      A spellbinding game where players cast magic by drawing symbols, built on a custom engine with an integrated editor.
-                    </div>
+                    <div class="content" locKey="s_proj_card_witchcraft_desc">A spellbinding game where players cast magic by drawing symbols, built on a custom engine with an integrated editor.</div>
                   </div>
                 </div>
               </article>
@@ -327,9 +328,7 @@
                         <p class="title is-4">Hook'n'Build</p>
                       </div>
                     </div>
-                    <div class="content">
-                      A real-time strategy about expanding flying islands and managing smog, refined through academic and acceleration programs.
-                    </div>
+                    <div class="content" locKey="s_proj_card_hnb_desc">A real-time strategy about expanding flying islands and managing smog, refined through academic and acceleration programs.</div>
                   </div>
                 </div>
               </article>
@@ -348,9 +347,7 @@
                         <p class="title is-4">Cute Fall</p>
                       </div>
                     </div>
-                    <div class="content">
-                      A charming mobile game about catching falling animals in bubbles.
-                    </div>
+                    <div class="content" locKey="s_proj_card_cutefall_desc">A charming mobile game about catching falling animals in bubbles.</div>
                   </div>
                 </div>
               </article>
@@ -375,9 +372,7 @@
                         <p class="title is-4">Catapult Mayhem</p>
                       </div>
                     </div>
-                    <div class="content">
-                      A VR game centered on catapult physics, letting players wreak havoc on a distant castle.
-                    </div>
+                    <div class="content" locKey="s_proj_card_catapult_desc">A VR game centered on catapult physics, letting players wreak havoc on a distant castle.</div>
                   </div>
                 </div>
               </article>
@@ -396,9 +391,7 @@
                         <p class="title is-4">Museum VR</p>
                       </div>
                     </div>
-                    <div class="content">
-                      A VR application that enables users to create interactive museum displays by uploading assets and arranging them in virtual reality.
-                    </div>
+                    <div class="content" locKey="s_proj_card_museumvr_desc">A VR application that enables users to create interactive museum displays by uploading assets and arranging them in virtual reality.</div>
                   </div>
                 </div>
               </article>
@@ -417,9 +410,7 @@
                         <p class="title is-4">Impossible Storrries!</p>
                       </div>
                     </div>
-                    <div class="content">
-                      A dynamic local co-op game with a story mode demo, featuring a boss fight and advanced AI behavior trees developed from my Master's thesis.
-                    </div>
+                    <div class="content" locKey="s_proj_card_impstr_desc">A dynamic local co-op game with a story mode demo, featuring a boss fight and advanced AI behavior trees developed from my Master's thesis.</div>
                   </div>
                 </div>
               </article>
@@ -444,9 +435,7 @@
                         <p class="title is-4">Driver Worktime Calculator</p>
                       </div>
                     </div>
-                    <div class="content">
-                      A .NET/WPF application designed to validate driver worktime and calculate monthly remuneration, built with the MVVM design pattern.
-                    </div>
+                    <div class="content" locKey="s_proj_card_dwc_desc">A .NET/WPF application designed to validate driver worktime and calculate monthly remuneration, built with the MVVM design pattern.</div>
                   </div>
                 </div>
               </article>
@@ -465,9 +454,7 @@
                         <p class="title is-4">Unity Asset Utilities</p>
                       </div>
                     </div>
-                    <div class="content">
-                      Unity tools for managing assets, including features for asset hiding and support for external directories.
-                    </div>
+                    <div class="content" locKey="s_proj_card_uau_desc">Unity tools for managing assets, including features for asset hiding and support for external directories.</div>
                   </div>
                 </div>
               </article>
@@ -486,9 +473,7 @@
                         <p class="title is-4">Master's project</p>
                       </div>
                     </div>
-                    <div class="content">
-                      A research-driven project focused on Smart Events in NPC behavior, utilizing Unity-based simulations to implement advanced AI concepts like Behavior Trees, Finite State Machines, and Primed Agents.
-                    </div>
+                    <div class="content" locKey="s_proj_card_master_desc">A research-driven project focused on Smart Events in NPC behavior, utilizing Unity-based simulations to implement advanced AI concepts like Behavior Trees, Finite State Machines, and Primed Agents.</div>
                   </div>
                 </div>
               </article>
@@ -502,9 +487,9 @@
   <!-- Game jams -->
   <section class="section">
     <div class="container">
-      <h1 class="title">Game jams</h1>
+      <h1 class="title" locKey="s_gamejam_title">Game jams</h1>
       <hr />
-      <p class="subtitle is-6 mb-5">I have participated in many game jams, rapidly prototyping games and trying out new and weird mechanics I didn’t have a chance to test otherwise. It is always fun coming up with ideas that fit in the game jam’s theme and implementing unique features. Below are some of the games I’ve developed during these events.</p>
+      <p class="subtitle is-6 mb-5" locKey="s_gamejam_intro">I have participated in many game jams, rapidly prototyping games and trying out new and weird mechanics I didn’t have a chance to test otherwise. It is always fun coming up with ideas that fit in the game jam’s theme and implementing unique features. Below are some of the games I’ve developed during these events.</p>
 
       <div class="tile is-ancestor">
         <div class="tile is-vertical is-12">
@@ -524,7 +509,7 @@
                       </div>
                     </div>
                     <div class="content">
-                      Theme: <i>Make Me Laugh</i>
+                      <span locKey="s_gamejam_card_theme_title">Theme</span>: <i>Make Me Laugh</i>
                     </div>
                   </div>
                 </div>
@@ -545,7 +530,7 @@
                       </div>
                     </div>
                     <div class="content">
-                      Theme: <i>Lost and Found</i>
+                      <span locKey="s_gamejam_card_theme_title">Theme</span>: <i>Lost and Found</i>
                     </div>
                   </div>
                 </div>
@@ -566,7 +551,7 @@
                       </div>
                     </div>
                     <div class="content">
-                      Theme: <i>Repair</i>
+                      <span locKey="s_gamejam_card_theme_title">Theme</span>: <i>Repair</i>
                     </div>
                   </div>
                 </div>
@@ -594,7 +579,7 @@
                       </div>
                     </div>
                     <div class="content">
-                      Theme: <i>What home means to you</i>
+                      <span locKey="s_gamejam_card_theme_title">Theme</span>: <i>What home means to you</i>
                     </div>
                   </div>
                 </div>
@@ -615,7 +600,7 @@
                       </div>
                     </div>
                     <div class="content">
-                      Theme: <i>Impossible</i>
+                      <span locKey="s_gamejam_card_theme_title">Theme</span>: <i>Impossible</i>
                     </div>
                   </div>
                 </div>
@@ -636,7 +621,7 @@
                       </div>
                     </div>
                     <div class="content">
-                      Theme: <i>Sacrifices must be made</i>
+                      <span locKey="s_gamejam_card_theme_title">Theme</span>: <i>Sacrifices must be made</i>
                     </div>
                   </div>
                 </div>
@@ -664,7 +649,7 @@
                       </div>
                     </div>
                     <div class="content">
-                      Theme: <i>The more you have, the worse it is</i>
+                      <span locKey="s_gamejam_card_theme_title">Theme</span>: <i>The more you have, the worse it is</i>
                     </div>
                   </div>
                 </div>
@@ -685,7 +670,7 @@
                       </div>
                     </div>
                     <div class="content">
-                      Theme: <i>A Small World</i>
+                      <span locKey="s_gamejam_card_theme_title">Theme</span>: <i>A Small World</i>
                     </div>
                   </div>
                 </div>
@@ -704,40 +689,40 @@
   <!-- Education -->
   <section class="section">
     <div class="container">
-      <h1 class="title">Education</h1>
+      <h1 class="title" locKey="s_education_title">Education</h1>
       <hr />
       <div class="card">
         <div class="card-content">
           <div class="content">
-            <p class="title is-4">Lodz University of Technology</p>
+            <p class="title is-4" locKey="s_education_plodz_name">Lodz University of Technology</p>
             <p class="subtitle is-6"><time datetime="2018">2018</time> - <time datetime="2019">2019</time></p>
           </div>
           <div class="content">
-            <p><strong>Master of Science: Information Technology</strong><br/>
-            specialization: Interactive Systems and Game Technologies</p>
+            <p><strong><span locKey="s_education_mgr_title">Master of Science</span>: <span locKey="s_education_it_name">Information Technology</span></strong><br/>
+            <span locKey="s_education_specialization">specialization</span>: <span locKey="s_education_spec_mgr_name">Interactive Systems and Game Technologies</span></p>
           </div>
         </div>
       </div>
       <div class="card card-gap">
         <div class="card-content">
           <div class="content">
-            <p class="title is-4">Lodz University of Technology</p>
+            <p class="title is-4" locKey="s_education_plodz_name">Lodz University of Technology</p>
             <p class="subtitle is-6"><time datetime="2014">2014</time> - <time datetime="2018">2018</time></p>
           </div>
           <div class="content">
-            <p><strong>Bachelor of Science: Information Technology</strong><br/>
-            specialization: Computer Simulation and Games Technologies</p>
+            <p><strong><span locKey="s_education_inz_title">Bachelor of Science</span>: <span locKey="s_education_it_name">Information Technology</span></strong><br/>
+            <span locKey="s_education_specialization">specialization</span>: <span locKey="s_education_spec_inz_name">Computer Simulation and Games Technologies</span></p>
           </div>
         </div>
       </div>
       <div class="card card-gap">
         <div class="card-content">
           <div class="content">
-            <p class="title is-4">Secondary Technical School of Mechanical and Electrical Engineering<br/>Upper Secondary School Complex No. 1 in Piotrków Trybunalski</p>
+            <p class="title is-4" locKey="s_education_tps_name">Secondary Technical School of Mechanical and Electrical Engineering<br/>Upper Secondary School Complex No. 1 in Piotrków Trybunalski</p>
             <p class="subtitle is-6"><time datetime="2010">2010</time> - <time datetime="2014">2014</time></p>
           </div>
           <div class="content">
-            <p><strong>Information Technology</strong></p>
+            <p><strong><span locKey="s_education_it_name">Information Technology</span></strong></p>
           </div>
         </div>
       </div>
@@ -747,7 +732,7 @@
   <!-- Contact -->
   <section class="section">
     <div class="container">
-      <h1 class="title">Contact</h1>
+      <h1 class="title" locKey="s_contact_title">Contact</h1>
       <hr />
       <nav class="level">
         <div class="level-item has-text-centered">
