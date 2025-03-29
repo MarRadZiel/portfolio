@@ -61,15 +61,101 @@ document.addEventListener('DOMContentLoaded', function () {
             s_proj_card_catapult_desc: "A VR game centered on catapult physics, letting players wreak havoc on a distant castle.",
             s_proj_card_museumvr_desc: "A VR application that enables users to create interactive museum displays by uploading assets and arranging them in virtual reality.",
             s_proj_card_impstr_desc: "A dynamic local co-op game with a story mode demo, featuring a boss fight and advanced AI behavior trees developed from my Master's thesis.",
+            s_proj_card_dwc_title: "Driver Worktime Calculator",
             s_proj_card_dwc_desc: "A .NET/WPF application designed to validate driver worktime and calculate monthly remuneration, built with the MVVM design pattern.",
             s_proj_card_uau_desc: "Unity tools for managing assets, including features for asset hiding and support for external directories.",
+            s_proj_card_master_title: "Master's project",
             s_proj_card_master_desc: "A research-driven project focused on Smart Events in NPC behavior, utilizing Unity-based simulations to implement advanced AI concepts like Behavior Trees, Finite State Machines, and Primed Agents.",
             
+            s_proj_modal_witchcraft_team: "Team: 4 programmers, 1 artist",
+            s_proj_modal_witchcraft_p_1: "The project was based on a game engine developed using C# and MonoGame framework. The main gameplay feature of Witchcraft was casting spells by drawing their symbols with mouse cursor. The engine included a level editor which accelerated the process of designing a scene shown in the game.",
+            s_proj_modal_witchcraft_p_2: "I was responsible e.g. for creating the editor, prefab and scene serialization, world chunks system and particle system.",
+            s_proj_modal_witchcraft_p_3: 'The game took first place in <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2017" target="_blank">IX ZTGK (Team Game Development Competition)</a> in "Development" category and was rewarded by Teyon.',
+
+            s_proj_modal_hnb_team: "Team: 4 programmers, 1 artist",
+            s_proj_modal_hnb_p_1: "Real-time economical strategy game that evolved from game developed during Ludum Dare 38 game jam. Gameplay features involves expanding terrain by joining islands flying nearby and controlling smog level which reduces the civilization’s population.",
+            s_proj_modal_hnb_p_2: "I was responsible e.g. for creating the save system, coding of island flight path calculation and adjustment of island tile model based on its connection to the other tiles.",
+            s_proj_modal_hnb_p_3: 'Project qualified for the final three in the "Game Design" category of <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2017" target="_blank">IX ZTGK</a>.<br/>The game was then developed further with help of the Lodz University of Technology POWER project. It took part in the <a href="https://arp.pl/pl/aktualnosci/arp-games-zainwestowalo-0-5-mln-w-gry-wideo" target="_blank">ARP Games</a> acceleration program and qualified for the investment stage.',
+
+            s_proj_modal_cutefall_team: "Team: 2 programmers, 1 artist",
+            s_proj_modal_cutefall_p_1: "Mobile game about catching falling animals in the bubbles of different sizes.",
+            s_proj_modal_cutefall_p_2: 'The project was developed for <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2018" target="_blank">X ZTGK</a>. It qualified for the finals in the "Mobile Games" category.',
+
+            s_proj_modal_catapult_team: "Team: 1 programmer, 2 artists",
+            s_proj_modal_catapult_p_1: "VR game about wreaking havoc with a catapult. The game was all about fun with physics. Player could operate the catapult to destroy the castle seen in the distance. Choice of the projectile used for this purpose  was up to the player.",
+            s_proj_modal_catapult_p_2: "I’ve done most of the coding for this game and was responsible e.g. for implementing catapult's behavior and for writing post-processing effects.",
+            s_proj_modal_catapult_p_3: 'The project was developed for <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2018" target="_blank">X ZTGK</a>. It qualified for final three in the "Virtual Environments" category.',
+
+            s_proj_modal_museumvr_team: "Team: 1 programmer, 2 artists",
+            s_proj_modal_museumvr_p_1: "VR project that serves as an interactive museum/art gallery display. It allows creation of own displays using uploaded assets and placing them in VR mode.",
+            s_proj_modal_museumvr_p_2: "I was responsible for writing most of the code for the application.",
+            s_proj_modal_museumvr_p_3: 'The project qualified for the finals in <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2018" target="_blank">X ZTGK</a> "Virtual Environments" category.',
+
+            s_proj_modal_impstr_team: "Team: 1 programmer, 2 artists",
+            s_proj_modal_impstr_p_1: "Game that was developed as a two player local co-op/party game for the Digital Night Jam 2018. It was further developed by adding demo of a story mode with one playable level including the boss fight. The project used improved behavior tree solution that was initially created for my Master’s thesis.",
+            s_proj_modal_impstr_p_2: "It was one of the most ambitious projects that I’ve taken part in. I’ve been responsible for the programming side of the whole game.",
+            s_proj_modal_impstr_p_3: 'The project qualified for the finals in <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2019" target="_blank">XI ZTGK</a> "Game Design" category and received an invitation for <a href="https://conference.digitaldragons.pl/indie-zone-old/indie-showcase/">Indie Showcase</a> during <a href="https://digitaldragons.pl/">Digital Dragons</a> 2020.',
+
+            s_proj_modal_dwc_p_1: "A .NET/WPF application developed by myself for an accounting office to help with validating driver’s worktime based on provided data and with calculating remuneration for specified month.",
+            s_proj_modal_dwc_p_2: "The application is using MVVM design pattern.",
+            
+            s_proj_modal_uau_p_1: "Set of tools designed to help manage assets in Unity projects. Includes tools for hiding specified assets and using assets outside of the project directory.",
+            s_proj_modal_uau_p_2: "They were developed by myself in response to the problems that I’ve encountered during my work with Unity.",
+            
+            s_proj_modal_master_p_1: "The topic of my Master’s thesis was \"Smart Events in NPC’s behaviour\". During my work I’ve conducted tests using simulations made in Unity Game Engine. The project for my Master’s degree thesis features implementation of Smart Events, Primed Agents, Behaviour Trees, Finite State Machine and more.",
+            s_proj_modal_master_p_2: "Behaviour Tree implementation and editor was developed further and used in the game Impossible Storrries.",
+            s_proj_modal_master_p_3: "The two screenshots show a change of behaviour of the \"Teacher\" agent based on fire smart event emergency level. The third one shows the other simulation scenario.",
+            s_proj_modal_master_p_4: "Below there are links to my Master’s thesis along with source Unity project and screencasts from conducted simulations.",
+            s_proj_modal_masters_thesis_btn_text: "Master's thesis",
+
+            s_proj_modal_screencasts_btn_text: "Screencasts",
+            s_proj_modal_code_repository_btn_text: "Code repository",
+            s_proj_modal_download_source_btn_text: "Download source",
+            s_proj_modal_download_build_btn_text: "Download build",
             s_proj_modal_close_btn_text: "Close",
 
             s_gamejam_title: "Game jams",
             s_gamejam_intro: "I have participated in many game jams, rapidly prototyping games and trying out new and weird mechanics I didn’t have a chance to test otherwise. It is always fun coming up with ideas that fit in the game jam’s theme and implementing unique features. Below are some of the games I’ve developed during these events.",
             s_gamejam_card_theme_title: "Theme",
+            
+            s_gamejam_modal_jaw_team: "Team: 2 programmers, 1 artist",
+            s_gamejam_modal_jaw_p_1: "Jawster is about an old warrior sent by the king to rescue the royal jester. While defeating enemies the warrior steals their teeth to fill the gaps in his own denture.",
+            s_gamejam_modal_jaw_p_2: "Collected teeth modify the player’s statistics. The player can also throw their jaw at the enemies as a long-range attack.",
+            s_gamejam_modal_jaw_p_3: "Besides programming the mechanics I had a chance to mentor the other developer as it was his first game he coded.",
+            
+            s_gamejam_modal_mission_team: "Team: 3 programmers, 1 artist, 1 sound designer",
+            s_gamejam_modal_mission_p_1: "The game is a twin-stick shooter about an astronaut that crashed on a hostile planet. Player must retrieve all parts of the ship and defend from angry aliens.",
+            s_gamejam_modal_mission_p_2: "That was my first fully remote game jam which made the project difficult to develop in such a short time but in the end we managed to create a mostly finished game.",
+            s_gamejam_modal_mission_p_3: "I was responsible for coding and implemented e.g. player controls which includes walking and using mouse to change shooting direction.",
+            
+            s_gamejam_modal_pvt_team: "Team: 3 programmers, 2 artists, 1 sound designer",
+            s_gamejam_modal_pvt_p_1: "The player takes on the role of a person responsible for censoring a news broadcast. Each scene has specified words that need to be beeped out. The result of the player’s actions are reflected in the broadcast’s viewer count.",
+            s_gamejam_modal_pvt_p_2: "As programmers we had a lot of fun creating a solution to detect and synchronize displayed text with the speech. It took us a long time, but in the end implemented detection technique worked perfectly.",
+
+            s_gamejam_modal_sacrableu_team: "Team: 3 programmers, 2 artists, 1 sound designer",
+            s_gamejam_modal_sacrableu_p_1: "The game is a four player crab fighting game. Each player controls one hermit crab that can pick up items scattered around the beach to use them as its shell or a weapon. The crabs are controlled using game pads.",
+            s_gamejam_modal_sacrableu_p_2: "The main twist is that to move, a player must use trigger buttons sequentially instead of traditional analog stick.",
+            s_gamejam_modal_sacrableu_p_3: "I was responsible for gameplay programming.",
+            
+            s_gamejam_modal_impstr_team: "Team: 1 programmers, 2 artists",
+            s_gamejam_modal_impstr_p_1: "(This one was developed further as the Impossible Storrries!)",
+            s_gamejam_modal_impstr_p_2: "The project is a two player coop game. The players must work together to defeat waves of enemies using cannons that can be only operated when both of them are holding it.",
+            s_gamejam_modal_impstr_p_3: "I was responsible for coding and e.g. implemented players cannon operating mechanic and simple enemy behavior.",
+
+            s_gamejam_modal_wolf_team: "Team: 1 programmer, 2 artists",
+            s_gamejam_modal_wolf_p_1: "Wolf Busters is a driving/shooting game with up-to 4 player split screen cooperation. The player’s goal is to get rid of all the wolves before they eat all the sheep.",
+            s_gamejam_modal_wolf_p_2: "I was responsible for coding and had implemented features such as driving physics and sheep flocking.",
+            
+            s_gamejam_modal_cod_team: "Team: 3 programmers, 1 artist",
+            s_gamejam_modal_cod_p_1: "The player takes on the role of a caveman that must provide food for his tribe. Each day the number of tribesmen to feed changes based on the amount of food gathered. Player must use his single spear to hunt down the wild animals.",
+            s_gamejam_modal_cod_p_2: "I was responsible e.g. for coding of creature behavior and creating cave painting shader.",
+
+            s_gamejam_modal_smlwld_team: "Team: 3 programmers",
+            s_gamejam_modal_smlwld_p_1: "(This one was developed further as the Hook’n’Build)",
+            s_gamejam_modal_smlwld_p_2: "The Game is a real-time economical strategy about expanding territory by joining flying islands and controlling a level of the created smog.",
+            s_gamejam_modal_smlwld_p_3: "I was responsible for coding and implemented e.g. camera controls and building mechanic.",
+
+            s_proj_modal_entry_btn_text: "Entry",
 
             s_education_title: "Education",
             s_education_plodz_name: "Lodz University of Technology",
@@ -159,15 +245,101 @@ document.addEventListener('DOMContentLoaded', function () {
             s_proj_card_catapult_desc: "Gra VR oparta na fizyce katapulty, pozwalająca graczom siać zniszczenie na odległym zamku.",
             s_proj_card_museumvr_desc: "Aplikacja VR umożliwiająca użytkownikom tworzenie interaktywnych ekspozycji muzealnych poprzez wgrywanie assetów i ich rozmieszczanie w wirtualnej rzeczywistości.",
             s_proj_card_impstr_desc: "Dynamiczna lokalna gra kooperacyjna z trybem fabularnym w wersji demo, zawierającym walkę z bossem i zaawansowane drzewa zachowań AI opracowane na podstawie mojej pracy magisterskiej.",
+            s_proj_card_dwc_title: "Kalkulator czasu pracy kierowców",
             s_proj_card_dwc_desc: "Aplikacja .NET/WPF zaprojektowana do weryfikacji czasu pracy kierowców i obliczania miesięcznego wynagrodzenia, zbudowana w oparciu o wzorzec projektowy MVVM.",
             s_proj_card_uau_desc: "Narzędzia Unity do zarządzania assetami, obejmujące funkcje ukrywania assetów i wsparcie dla zewnętrznych katalogów.",
+            s_proj_card_master_title: "Projekt magisterski",
             s_proj_card_master_desc: "Projekt badawczy koncentrujący się na Smart Events w zachowaniach NPC, wykorzystujący symulacje w silniku Unity do implementacji zaawansowanych koncepcji AI, takich jak drzewa zachowań, maszyny stanów skończonych oraz Primed Agents.",
 
+            s_proj_modal_witchcraft_team: "Zespół: 4 programistów, 1 artystka",
+            s_proj_modal_witchcraft_p_1: "Projekt powstał na własnym silniku stworzonym z wykorzystaniem C# i framework'u MonoGame. Główną mechaniką rozgrywki w Witchcraft było rzucanie czarów rysując ich symbole kursorem myszy. Silnik zawierał edytor poziomów, który znacząco przyspieszył proces projektowania scen pokazanych w grze.",
+            s_proj_modal_witchcraft_p_2: "Byłem odpowiedzialny m.in. za stworzenie edytora, serializacji prefab'ów i scen, systemu chunk'ów świata i systemów cząsteczkowych.",
+            s_proj_modal_witchcraft_p_3: 'Gra zajęła pierwsze miejsce w <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2017" target="_blank">IX ZTGK (Zespołowe Tworzenie Gier Komputerowych)</a> w kategorii "Development" i została nagrodzona przez firmę Teyon.',
+
+            s_proj_modal_hnb_team: "Zespół: 4 programistów, 1 artystka",
+            s_proj_modal_hnb_p_1: "Strategia czasu rzeczywistego, która wyewoluowała z gry stworzonej podczas game jamu Ludum Dare 38. Rozgrywka polega na rozszerzaniu swojego terytorium poprzez łączenie latających wysp oraz na kontrolowaniu poziomu smogu, który redukuje liczbę populacji.",
+            s_proj_modal_hnb_p_2: "Byłem odpowiedzialny m.in. za stworzenie systemu zapisów, zkodowanie obliczania toru lotów wysp oraz dostosowanie modelu kafelka wyspy, na podstawie jego połączeń z innymi kafelkami.",
+            s_proj_modal_hnb_p_3: 'Projekt zakwalifikował się do finałowej trójki w kategorii "Game Design" podczas <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2017" target="_blank">IX ZTGK</a>.<br/>Gra była następnie rozwijana przy wsparciu projektu POWER Politechniki Łódzkiej. Wzięła udział w programie akceleracyjnym <a href="https://arp.pl/pl/aktualnosci/arp-games-zainwestowalo-0-5-mln-w-gry-wideo" target="_blank">ARP Games</a> i zakfalifikowała się do fazy inwestycyjnej.',
+
+            s_proj_modal_cutefall_team: "Zespół: 2 programistów, 1 artystka",
+            s_proj_modal_cutefall_p_1: "Gra mobilna o łapanu spadających zwierząt w bańki o róznych rozmiarach.",
+            s_proj_modal_cutefall_p_2: 'Projekt został stworzony na potrzeby <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2018" target="_blank">X ZTGK</a>. Zakwalifikował się do finałów w kategorii "Mobile Games".',
+
+            s_proj_modal_catapult_team: "Zespół: 1 programista, 2 artystów",
+            s_proj_modal_catapult_p_1: "Gra VR o sianiu zniszczenia za pomocą katapulty. Rozgrywka skupiała się na zabawie z fizyką. Gracz mógł obsługiwać katapultę, aby niszczyć zamek widoczny w oddali. Wybór pocisku użytego do tego celu należał do gracza.",
+            s_proj_modal_catapult_p_2: "Byłem odpowiedzialny za więszość kodu m.in. zaimplementowałem zachowanie katapulty i napisałem efekty post-procesowe.",
+            s_proj_modal_catapult_p_3: 'Projekt był stworzony na potrzeby <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2018" target="_blank">X ZTGK</a>. Zakwalifikował się do finałowej trójki w kategorii "Virtual Environments".',
+
+            s_proj_modal_museumvr_team: "Zespół: 1 programista, 2 artystów",
+            s_proj_modal_museumvr_p_1: "Projekt VR pełniący funkcję interaktywnej ekspozycji muzealnej lub galerii sztuki. Umożliwia tworzenie własnych ekspozycji poprzez wgrywnie zasobów i ich rozmieszczanie w trybie VR.",
+            s_proj_modal_museumvr_p_2: "Byłem odpowiedzialny za napisanie większości kodu aplikacji.",
+            s_proj_modal_museumvr_p_3: 'Projekt zakwalifikował się do finałów <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2018" target="_blank">X ZTGK</a> w kategorii "Virtual Environments".',
+
+            s_proj_modal_impstr_team: "Zespół: 1 programista, 2 artystów",
+            s_proj_modal_impstr_p_1: "Gra stworzona jako lokalna kooperacyjna gra imprezowa dla dwóch graczy podczas Digital Night Jam 2018. Została rozwinięta o demo trybu fabularnego z jednym grywalnym poziomem, który zawiera walkę z bossem. Projekt wykorzystał ulepszone drzewa zachowań AI opracowane pierwotnie w ramach mojej pracy magisterskiej.",
+            s_proj_modal_impstr_p_2: "To był jeden z najbardziej ambitnych projektów w jakich brałem udział. Byłem odpowiedzialny za stronę programistyczną całej gry.",
+            s_proj_modal_impstr_p_3: 'Projekt zakwalifikował się do finałów <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2019" target="_blank">XI ZTGK</a> w kategorii "Game Design" i otrzymał zaproszenie na <a href="https://conference.digitaldragons.pl/indie-zone-old/indie-showcase/">Indie Showcase</a> podczas <a href="https://digitaldragons.pl/">Digital Dragons</a> 2020.',
+
+            s_proj_modal_dwc_p_1: "Aplikacja .NET/WPF stworzona przeze mnie dla biura księgowego, aby pomóc z walidacją czasu pracy kierowców na podstawie dostarczonych danych oraz z obliczaniem wynagrodzenia za dany miesiąc.",
+            s_proj_modal_dwc_p_2: "Aplikacja wykorzystuje wzorzec projektowy MVVM.",
+            
+            s_proj_modal_uau_p_1: "Zestaw narzędzi pomocnych w zarządzaniu assetami w projektach Unity. Zawiera narzędzia do ukrywania wybranych assetów oraz używania zasobów z poza katalogu projektu.",
+            s_proj_modal_uau_p_2: "Zostały one stworzone przeze mnie w odpowiedzi na problemy jakie napotkałem podczas mojej pracy z Unity.",
+                        
+            s_proj_modal_master_p_1: "Tematem mojej pracy magisterskiej było \"Smart Events w zachowaniu NPC\". Podczas mojej pracy przeprowadziłem testy z wykorzystaniem symulacji wykonanych w silniku gier Unity. Projekt mojej pracy magisterskiej obejmuje implementację Smart Events, Primed Agents, Drzew Zachowań, Maszyny Stanów Skończonych i innych zaawansowanych rozwiązań.",
+            s_proj_modal_master_p_2: "Implementacja Drzew Zachowań oraz edytor był dalej rozwijany i został wykorzystany w grze Impossible Storrries.",
+            s_proj_modal_master_p_3: "Dwa zrzuty ekranu przedstawiają zmianę w zachowaniu agenta \"Nauczyciela\" na podstawie stopnia rozwoju zdarzenia pożaru. Trzeci zrzut pokazuje inny scenariusz symulacji.",
+            s_proj_modal_master_p_4: "Poniżej znajdują się odnośniki do mojej pracy magisterskiej, a także źródłowego projektu Unity oraz screencast'ów z przeprowadzonych symulacji.",
+            s_proj_modal_masters_thesis_btn_text: "Praca magisterska",
+
+            s_proj_modal_screencasts_btn_text: "Screencast'y",
+            s_proj_modal_code_repository_btn_text: "Repozytorium kodu",
+            s_proj_modal_download_source_btn_text: "Pobierz źródło",
+            s_proj_modal_download_build_btn_text: "Pobierz build",
             s_proj_modal_close_btn_text: "Zamknij",
             
             s_gamejam_title: "Game jam'y",
             s_gamejam_intro: "Brałem udział w wielu game jamach, szybko prototypując gry i testując nowe, nietypowe mechaniki, których wcześniej nie miałem okazji wypróbować. Tworzenie pomysłów pasujących do tematu game jamu i wdrażanie unikalnych funkcji zawsze sprawiało mi dużo frajdy. Poniżej znajdują się niektóre gry, które opracowałem podczas tych wydarzeń.",
             s_gamejam_card_theme_title: "Temat",
+            
+            s_gamejam_modal_jaw_team: "Zespół: 2 programistów, 1 artystka",
+            s_gamejam_modal_jaw_p_1: "Jawster opowiada o starym wojowniku wysłanym przez króla na ratunek królewskiemu błaznowi. Pokonując przeciwników wojownik kradnie ich zęby aby uzupełnić braki we własnej sztucznej szczęce.",
+            s_gamejam_modal_jaw_p_2: "Zebrane zęby modyfikują statystyki postaci. Gracz może także rzucić szczęką w przeciwników jako atak dystansowy.",
+            s_gamejam_modal_jaw_p_3: "Poza programowaniem mechanik rozgrywki miałem szansę mentorować drugiemu programiście, dla którego była to pierwsza kodowana przez niego gra.",
+            
+            s_gamejam_modal_mission_team: "Zespół: 3 programistów, 1 artysta, 1 sound designer",
+            s_gamejam_modal_mission_p_1: "Gra to twin-stick shooter o astronaucie, który rozbija się na nieprzyjaznej planecie. Gracz musi odzyskać wszystkie części statku i bronić się przed groźnymi obcymi.",
+            s_gamejam_modal_mission_p_2: "To był mój pierwszy w pełni zdalny game jam co uczyniło projekt trudnym do rozwijania w tak krótkim czasie, ale ostatecznie byliśmy w stanie stworzyć niemal skończonę grę.",
+            s_gamejam_modal_mission_p_3: "Byłem odpowiedzialny za kodowanie i zaimplementowałem m.in. sterowanie graczem wraz z chodzeniem i używaniem myszy do zmiany kierunku strzału.",
+
+            s_gamejam_modal_pvt_team: "Zespół: 3 programistów, 2 artystki, 1 sound designer",
+            s_gamejam_modal_pvt_p_1: "Gracz przyjmuje rolę osoby odpowiedzialnej za cenzurę serwisu informacyjnego. Każda scena zawiera określone słowa do \"wypikania\". Konsekwencje akcji gracza są odzwierciedlane w liczbie oglądających wydanie wiadomości.",
+            s_gamejam_modal_pvt_p_2: "Jako programiści mieliśmy dużo zabawy z tworzeniem rozwiązania do wykrywania i synchronizacji wyświetlanego tekstu z mową. Zajęło nam to sporo czasu, ale ostatecznie zaimplementowana technika detekcji zadziałała perfekcyjnie.",
+
+            s_gamejam_modal_sacrableu_team: "Zespół: 3 programistów, 2 artyści, 1 sound designer",
+            s_gamejam_modal_sacrableu_p_1: "Gra jest czteroosobową bijatyką o krabach. Każdy z graczy steruje pustelnikiem, który może zbierać przedmioty porozrzucane po plaży i używać ich jako swojej skorupy lub broni. Kraby są kontrolowane używając game pad'ów.",
+            s_gamejam_modal_sacrableu_p_2: "Głównym twist'em jest to, że aby się poruszać, gracze muszą w tym czelu naprzemiennie wciskać trigger'y zamiast tradycyjnego joystick'a analogowego.",
+            s_gamejam_modal_sacrableu_p_3: "Byłem odpowiedzialny za programowanie rozgrywki.",
+            
+            s_gamejam_modal_impstr_team: "Zespół: 1 programista, 2 artystów",
+            s_gamejam_modal_impstr_p_1: "(Ten projekt był rozwijany dalej jako Impossible Storrries!)",
+            s_gamejam_modal_impstr_p_2: "Projekt jest grą kooperacyjną dla dwóch graczy. Muszą oni współpracować, aby obronić się przed falami przeciwników używając w tym celu armat, które mogą być obsługiwane tylko jeśli obaj je trzymają.",
+            s_gamejam_modal_impstr_p_3: "Byłem odpowiedzialny za kodowanie i zaimplementowałem m.in. mechanikę operowania armatą przez graczy oraz proste zachowania wrogów.",
+
+            s_gamejam_modal_wolf_team: "Zespół: 1 programista, 2 artystów",
+            s_gamejam_modal_wolf_p_1: "Wolf Busters to gra wyścigowo-strzelecka z możliwością współpracy do 4 graczy na podzielonym ekranie. Celem graczy jest pozbycie się wszystkich wilków zanim zjedzą wszystkie owce.",
+            s_gamejam_modal_wolf_p_2: "Byłem odpowiedzialny za kodowanie i zaimplementowałem takie feature'y jak fizykę pojazdów czy zachowania stadne owiec.",
+
+            s_gamejam_modal_cod_team: "Zespół: 3 programistów, 1 artystka",
+            s_gamejam_modal_cod_p_1: "Gracz przyjmuje postać jaskiniowca, który musi zapewnić wyżywienie swojemu plemieniu. Każdego dnia liczba współplemieńców do wykarmienia zmienia się na podstawie ilości zdobytego jedzenia. Graczy musi używać swojej jedynej włóczni do polowania na dzikie zwierzęta.",
+            s_gamejam_modal_cod_p_2: "Byłem odpowiedzialny m.in. za zaprogramowanie zachowań zwierząt oraz stworzenie shader'a imitującego malowidła jaskiniowe.",
+
+            s_gamejam_modal_smlwld_team: "Zespół: 3 programistów",
+            s_gamejam_modal_smlwld_p_1: "(Ten projekt był rozwijany dalej jako Hook’n’Build)",
+            s_gamejam_modal_smlwld_p_2: "Gra jest ekonomiczną strategią czasu rzeczywistego o rozszerzaniu terytorium poprzez łączenie latających wysp oraz kontrolowaniu poziomu wytwarzanego smogu.",
+            s_gamejam_modal_smlwld_p_3: "Byłem odpowiedzialny za kodowanie i zaimplementowałem m.in. sterowanie kamerą oraz mechanikę budowania.",
+
+            s_proj_modal_entry_btn_text: "Zgłoszenie",
 
             s_education_title: "Wykształcenie",
             s_education_plodz_name: "Politechnika Łódzka",
