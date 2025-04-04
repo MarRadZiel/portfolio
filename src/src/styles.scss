@@ -43,7 +43,9 @@ a.icon > strong {margin-left:.25rem}
 // Flickity - end
 
 .hero {
-  background-position-x: center;
+  //background-position-x: center;
+  border-top: 1em solid white;
+  background-color: #207441 !important;
 }
 
 // Collapsible

@@ -79,7 +79,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             s_proj_modal_cutefall_team: "Team: 2 programmers, 1 artist",
             s_proj_modal_cutefall_p_1: "Mobile game about catching falling animals in the bubbles of different sizes.",
-            s_proj_modal_cutefall_p_2: 'The project was developed for <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2018" target="_blank">X ZTGK</a>. It qualified for the finals in the "Mobile Games" category.',
+            s_proj_modal_cutefall_p_2: "I’ve was responsible e.g. for implementing highscore and combo system.",
+            s_proj_modal_cutefall_p_3: 'The project was developed for <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2018" target="_blank">X ZTGK</a>. It qualified for the finals in the "Mobile Games" category.',
 
             s_proj_modal_catapult_team: "Team: 1 programmer, 2 artists",
             s_proj_modal_catapult_p_1: "VR game about wreaking havoc with a catapult. The game was all about fun with physics. Player could operate the catapult to destroy the castle seen in the distance. Choice of the projectile used for this purpose  was up to the player.",
@@ -263,7 +264,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             s_proj_modal_cutefall_team: "Zespół: 2 programistów, 1 artystka",
             s_proj_modal_cutefall_p_1: "Gra mobilna o łapanu spadających zwierząt w bańki o róznych rozmiarach.",
-            s_proj_modal_cutefall_p_2: 'Projekt został stworzony na potrzeby <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2018" target="_blank">X ZTGK</a>. Zakwalifikował się do finałów w kategorii "Mobile Games".',
+            s_proj_modal_cutefall_p_2: "Byłem odpowiedzialny m.in. za implementację systemu liczenia wyniku i combo.",
+            s_proj_modal_cutefall_p_3: 'Projekt został stworzony na potrzeby <a href="https://gry.it.p.lodz.pl/main/index.php/pl/okonkursie/poprzednie-edycje/edycja-2018" target="_blank">X ZTGK</a>. Zakwalifikował się do finałów w kategorii "Mobile Games".',
 
             s_proj_modal_catapult_team: "Zespół: 1 programista, 2 artystów",
             s_proj_modal_catapult_p_1: "Gra VR o sianiu zniszczenia za pomocą katapulty. Rozgrywka skupiała się na zabawie z fizyką. Gracz mógł obsługiwać katapultę, aby niszczyć zamek widoczny w oddali. Wybór pocisku użytego do tego celu należał do gracza.",
