@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             s_aboutme_title: "O Mnie",
             s_aboutme_text_hello: "Cześć! Nazywam się Marcin Zieliński",
-            s_aboutme_text_p_1: "Jestem programistą, którego pasją jest tworzenie gier i aplikacji multimedialnych. Szczególnie lubię zadania, które wiążą się z tworzeniem narzędzi do uproszczenia procesu rozwijania aplikacji, jak przykładowo roszerzanie możliwość silnika gier.",
+            s_aboutme_text_p_1: "Jestem programistą, którego pasją jest tworzenie gier i aplikacji multimedialnych. Szczególnie lubię zadania, które wiążą się z tworzeniem narzędzi do uproszczenia procesu rozwijania aplikacji, jak przykładowo roszerzanie możliwości silnika gier.",
             s_aboutme_text_p_2: "Przez lata rozbudowywałem swoje umiejętności związane z C# i Unity, pracując przy projektach pozwalających mi na badanie technicznych jak i kreatywnych rozwiązań. Zawsze szukam możliwości do nauki i do stania się lepszym w tym co robię.",
             s_aboutme_text_p_3: "W swoim wolnym czasie lubię pracować nad osobistymi projektami takimi jak gra zainspirowana Sudoku, którą aktualnie rozwijam. Z działającym prototypem stworzonym w Unity, chcę go dalej poprawiać i wydać, kiedy zostanie dokończony.",
         
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function () {
             s_prof_exp_vescom_ruvre_p_1: "Moim głownym obowiązkiem było rozwijanie projektu RUVRE, zaprojektowanego z myślą o dostarczaniu klientowi w czasie rzeczywistym wizualizacji zmian architektonicznych.",
             s_prof_exp_vescom_ruvre_p_2: "Projekt składał się z:",
             s_prof_exp_vescom_ruvre_p_2_1: 'pluginu do istniejącego oprogramowania <span class="tooltip">BIM<span class="tooltiptext"><a href="https://pl.wikipedia.org/wiki/Building_Information_Modeling" target="_blank">Building Information Modeling</a></span></span>,',
-            s_prof_exp_vescom_ruvre_p_2_2: "web serwisiu ASP .NET Core służącego do zarządzania bazą danych,",
+            s_prof_exp_vescom_ruvre_p_2_2: "web serwisu ASP .NET Core służącego do zarządzania bazą danych,",
             s_prof_exp_vescom_ruvre_p_2_3: "wieloplatformowej aplikacji klienckiej stworzonej w Unity, która miała być kompatybilna z systemem Android, Windows, urządzeniami VR (zarówno stacjonarnymi jak i samodzielnymi) oraz miała posiadać tryb AR,",
             s_prof_exp_vescom_ruvre_p_2_4: "współdzielonej biblioteki klas używanej przez wszystkie z powyższych.",
             s_prof_exp_vescom_ruvre_p_3: "Projekt pozwalał na konwertowanie danych z istniejącego oprogramowania do naszego formatu wykorzystując plugin oraz wgranie ich na serwer z użyciem storzonego web serwisu.",
