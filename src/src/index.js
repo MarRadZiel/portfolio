@@ -106,6 +106,7 @@ function initCarousel(id, adaptiveHeight=true, autoplay=false, wrapAround=false,
             autoPlay: autoplay,
             wrapAround: wrapAround,
             setGallerySize: setGallerySize,
+            lazyLoad: true,
             adaptiveHeight: adaptiveHeight // https://github.com/metafizzy/flickity/issues/11
         });
     }
@@ -116,6 +117,7 @@ function initCarousel(id, adaptiveHeight=true, autoplay=false, wrapAround=false,
             autoPlay: autoplay,
             wrapAround: wrapAround,
             setGallerySize: setGallerySize,
+            lazyLoad: true,
             adaptiveHeight: adaptiveHeight // https://github.com/metafizzy/flickity/issues/11
         });
     }
