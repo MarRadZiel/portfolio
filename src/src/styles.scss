@@ -48,6 +48,18 @@ a.icon > strong {margin-left:.25rem}
   background-color: #207441 !important;
 }
 
+.vimeo-title {
+  @extend .title;
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: 800;
+  color: white;
+  background-color: #000000;
+  border-radius: 0.2em;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
 // Collapsible
 .collapsible {
   background-color: white;

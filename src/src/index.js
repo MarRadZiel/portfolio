@@ -25,19 +25,19 @@ if ($sectionCarousels.length > 0) {
 
 // Initialize collapsibles
 var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        } 
-      });
-    }
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+        content.style.maxHeight = null;
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+    } 
+    });
+}
 
 // Modals
 
@@ -62,6 +62,35 @@ if ($modalCloses.length > 0) {
         });
     });
 }
+
+
+async function fetchVimeoTitle(videoId) {
+  const url = `https://vimeo.com/api/oembed.json?url=https://vimeo.com/${videoId}`;
+  const response = await fetch(url);
+  const data = await response.json();
+  return data.title;
+}
+
+async function loadAllVimeoTitles() {
+  const wrappers = document.querySelectorAll('.vimeo-wrapper');
+
+  for (const wrapper of wrappers) {
+    const videoId = wrapper.dataset.videoid;
+    const titleElement = wrapper.querySelector('.vimeo-title');
+
+    try {
+      const title = await fetchVimeoTitle(videoId);
+      titleElement.textContent = title;
+    } catch (error) {
+      //titleElement.textContent = 'Nie udało się pobrać tytułu';
+      //console.error(`Błąd dla video ${videoId}:`, error);
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', loadAllVimeoTitles);
+
+
 
 function openModal(target) {
     var $target = document.getElementById(target);
@@ -88,6 +117,14 @@ function closeModals() {
     rootEl.classList.remove('is-clipped');
     $modals.forEach(function ($el) {
         $el.classList.remove('is-active');
+        // Pause videos
+        var iframes = $el.querySelectorAll("iframe");
+        for (const iframe of iframes) {
+            if (iframe.contentWindow) {
+                var player = new Vimeo.Player(iframe);
+                player.pause();
+            }
+        }
     });
 }
 
@@ -95,7 +132,7 @@ function closeModals() {
 
 function initCarousel(id, adaptiveHeight=true, autoplay=false, wrapAround=false, setGallerySize=true, flex=false, carouselEl=null) {
     if(flex && carouselEl!=null){
-        return new Flickity('#' + id, {
+        const flckty = new Flickity('#' + id, {
             on: {
                 ready: () => {
                     carouselEl.classList.add('flexy-carousel');
@@ -109,6 +146,16 @@ function initCarousel(id, adaptiveHeight=true, autoplay=false, wrapAround=false,
             lazyLoad: true,
             adaptiveHeight: adaptiveHeight // https://github.com/metafizzy/flickity/issues/11
         });
+        flckty.on('select', function(index) {
+            var iframes = flckty.element.querySelectorAll("iframe");
+            for (const iframe of iframes) {
+                if (iframe.contentWindow) {
+                    var player = new Vimeo.Player(iframe);
+                    player.pause();
+                }
+            }
+        });
+        return flckty;
     }
     else {
         return new Flickity('#' + id, {
@@ -122,7 +169,6 @@ function initCarousel(id, adaptiveHeight=true, autoplay=false, wrapAround=false,
         });
     }
 }
-
 
 function getAll(selector) {
     return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
